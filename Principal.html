@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zen-Zone</title>
+    <link rel="stylesheet" href="Css/Prin.css">
+</head>
+<body>
+<div class="content main-image">
+    <div class="image-container">
+        <img src="img/Zen-Zone-SF.png" width="230" height="230" alt="Zen Zone">
+    </div>
+</div>
+<div class="content game-container">
+    <div class="game-item">
+        <img src="img/memorama.png" alt="Memorama">
+        <button id="memorama" class="boton-juego" onclick="redirectToMemorama()">Memorama</button>
+    </div>
+    <div class="game-item">
+        <img src="img/rompecabezas.png" alt="Rompecabezas">
+        <button id="Rompecabezas" class="boton-juego" onclick="redirectToRompecabezas()">Rompecabezas</button>
+    </div>
+    <div class="game-item">
+        <img src="img/simon.png" alt="Simon Dice">
+        <button id="Simon Dice" class="boton-juego" onclick="redirectToSD()">Simon</button>
+    </div>
+    <div class="game-item">
+        <img src="img/calculo_mental.png" alt="Calculo Mental">
+        <button id="Calculo_Mental" class="boton-juego" onclick="redirectToCM()">Cálculo Mental</button>
+    </div>
+    <div class="game-item">
+        <img src="img/actividades.png" alt="Actividades Físicas">
+        <button id="actividades" class="boton-juego" onclick="redirectToAF()">Actividad Física</button>
+    </div>
+</div>
+
+<script src="Js/Prin.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
