@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #1a9b4f;
+}
+
+.container {
+    text-align: center;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff69b4;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+    border: 2px solid #000; /* Añadir un borde negro */
+}
+
+button:hover {
+    background-color: #ff69b4;
+}
+
+#problem {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+#feedback {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+#answer-input {
+    font-size: 18px;
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    margin: 10px;
+}
+
+.image-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 9999;
+    filter: drop-shadow(
+        0 0 3px rgba(0, 0, 0, 0.8)
+    );
+}
+
+.regresar-button {
+    position: fixed; /* Posición fija para mantener el botón en la ventana del navegador */
+    top: 20px; /* Distancia desde la parte superior */
+    right: 20px; /* Distancia desde la derecha */
+    display: block;
+    width: 100px; /* Ancho más pequeño */
+    padding: 8px 16px; /* Menos relleno */
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em; /* Tamaño de fuente ligeramente más pequeño */
+    border: 2px solid #000; /* Añadir un borde negro */
+    cursor: pointer;
+    transition: background 0.3s ease; /* Transición del fondo */
+    background: linear-gradient(135deg, #ff69b4, #366fff); /* Degradado entre rosa y azul */
+}
+
+.regresar-button:hover {
+    background-color: #ff1493; /* Cambiar el color de fondo al pasar el ratón */
+}

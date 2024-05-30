@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1a9b4f;
+}
+
+.title {
+    text-align: left;
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(80vh - 50px);
+    margin-top: -32px;
+}
+
+.game-container {
+    display: grid;
+    grid-template-columns: repeat(4, 120px);
+    grid-gap: 20px;
+}
+.menu {
+    background-color: transparent;
+    border: 0;
+    color: #ffffff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center; /* Alinear los elementos horizontalmente */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    font-size: .85rem;
+    text-align: center;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Elimina el margen predeterminado de la lista */
+    display: flex; /* Cambiar el contenedor de lista a un flex container */
+}
+
+.menu ul li {
+    margin-bottom: 10px;
+    margin-right: 10px; /* Añade un margen entre los elementos de la lista */
+}
+
+.menu button {
+    padding: 10px;
+    background-color: #1de073;
+    border: none;
+    color: #fff;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 0 0 2px #096740; /* Agrega un margen de color negro alrededor del botón */
+}
+
+.menu button:hover {
+    background-color: #366fff;
+}
+
+.card {
+    width: 120px;
+    height: 120px;
+    background-color: #ec87a7; /* Color de fondo de las tarjetas */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.3s ease; /* Agregar transición */
+}
+
+.card.flip {
+    transform: rotateY(180deg); /* Voltear la carta */
+}
+
+.card span {
+    font-size: 5em; /* Tamaño de los emojis */
+    transition: opacity 0.3s ease; /* Agregar transición */
+}
+
+.card span.hidden {
+    opacity: 0; /* Ocultar el contenido */
+}
+
+.regresar-button {
+    position: fixed; /* Posición fija para mantener el botón en la ventana del navegador */
+    top: 20px; /* Distancia desde la parte superior */
+    right: 20px; /* Distancia desde la derecha */
+    display: block;
+    width: 100px; /* Ancho más pequeño */
+    padding: 8px 16px; /* Menos relleno */
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em; /* Tamaño de fuente ligeramente más pequeño */
+    border: 2px solid #000; /* Añadir un borde negro */
+    cursor: pointer;
+    transition: background 0.3s ease; /* Transición del fondo */
+    background: linear-gradient(135deg, #ff69b4, #366fff); /* Degradado entre rosa y azul */
+}
+
+.regresar-button:hover {
+    background-color: #ff1493; /* Cambiar el color de fondo al pasar el ratón */
+}
+
+.image-container{
+    filter: drop-shadow(
+        0 0 3px rgba(0, 0, 0, 0.8)
+    );
+}
+

@@ -1,0 +1,191 @@
+body {
+    font-family: Arial, sans-serif;
+    width: 940px;
+    margin: 2% auto;
+    min-height: 100%;
+    background-color: #1a9b4f;
+    box-sizing: border-box;
+}
+
+.image-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 9999;
+    filter: drop-shadow(
+        0 0 3px rgba(0, 0, 0, 0.8)
+    );
+}
+
+/* Resto de tus estilos CSS */
+
+ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+li {
+    padding: 5px 0;
+    animation: fadein 5s;
+}
+
+li::before {
+    content: "• ";
+    color: #EC6778;
+}
+
+.col-40 h1 {
+    margin: 0% auto;
+    text-align: center;
+    font-size: 27px;
+    color: #E84A5F;
+}
+
+.col-40,
+.col-60 {
+    display: table-cell;
+    margin: 0;
+    vertical-align: top;
+}
+
+.col-40 {
+    width: 40%;
+    max-width: 376px;
+    /* background: #FFF; */
+    padding: 30px;
+    color: #000;
+}
+
+.col-60 {
+    width: 60%;
+    max-width: 564px;
+    /* background: #E84A5F; */
+}
+
+#flecha {
+    font-size: 40px;
+}
+
+.texto-centrado {
+    text-align: center;
+}
+
+#juego div {
+    text-align: center;
+    animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* este es el tablero de juego */
+
+#juego {
+    background-image: -webkit-linear-gradient(top, #eb94d0, #2079b0);
+    background-image: -moz-linear-gradient(top, #eb94d0, #2079b0);
+    background-image: -ms-linear-gradient(top, #eb94d0, #2079b0);
+    background-image: -o-linear-gradient(top, #eb94d0, #2079b0);
+    background-image: linear-gradient(to bottom, #eb94d0, #2079b0);
+    /* background-color: blue; */
+    width: 600px;
+    height: 600px;
+    box-sizing: border-box;
+}
+
+.piezas {
+    width: 33.33%;
+    height: 33.33%;
+    float: left;
+}
+
+.piezas img {
+    width: 100%;
+    height: 100%;
+    border: 0.30px solid rgb(97, 204, 209);
+}
+
+
+/*  títulos, las instrucciones y el footer.*/
+
+#instrucciones h2 {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #000;
+}
+
+#objetivo h2 {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #000;
+}
+
+#objetivo img {
+    margin: 0% auto;
+    width: 75%;
+}
+
+#ultimo-mov h2 {
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #000;
+}
+
+#footer p {
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #000;
+}
+
+#iniciarContainer {
+    position: fixed;
+    bottom: 20px; /* Cambiar a la posición deseada */
+    width: 100%; /* Opcional: hacer que el contenedor abarque todo el ancho */
+    text-align: center; /* Alinear el botón al centro */
+}
+
+#iniciarButton {
+    display: inline-block;
+    width: 150px; /* Ancho deseado del botón */
+    padding: 10px 20px;
+    background-color: #ff69b4;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    border: 2px solid #000;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#iniciarButton:hover {
+    background-color: #ff1493;
+}
+
+.regresar-button {
+    position: fixed; /* Posición fija para mantener el botón en la ventana del navegador */
+    top: 20px; /* Distancia desde la parte superior */
+    right: 20px; /* Distancia desde la derecha */
+    display: block;
+    width: 100px; /* Ancho más pequeño */
+    padding: 8px 16px; /* Menos relleno */
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em; /* Tamaño de fuente ligeramente más pequeño */
+    border: 2px solid #000; /* Añadir un borde negro */
+    cursor: pointer;
+    transition: background 0.3s ease; /* Transición del fondo */
+    background: linear-gradient(135deg, #ff69b4, #366fff); /* Degradado entre rosa y azul */
+}
+
+.regresar-button:hover {
+    background-color: #ff1493; /* Cambiar el color de fondo al pasar el ratón */
+}
